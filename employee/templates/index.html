@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert data</title>
+</head>
+<body>
+<h1> Create new Reord insert my sql in php myadmin</h1>
+<h2> python Django web programming </h2>
+<form method="POST">
+    {%csrf_ token%}
+
+employee Name: <input type="text" placeholder="Enter the employee name" name="empname"></br>
+employee email: <input type="text" placeholder="Enter the employee email" name="email"></br>
+employee country: <input type="text" placeholder="Enter the employee country" name="country"></br>
+<input type="submit" value="InsertRecord"></br>
+    {% if messages%}
+    {% for  message in messages%}
+    <h2>{{message}}</h2>
+    {% endfor%}
+    {% endif%}
+</form>
+
+</body>
+</html>
